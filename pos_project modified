@@ -20,7 +20,7 @@ while True:
         item_input()
         answer = input ("Do you want to add some more products?  (Yes/No)")
                
-    elif answer == "no" or answer == "No":
+    if answer == "no" or answer == "No":
         print("-" * 40)
         print(name)
         print("Please pay $", Total)

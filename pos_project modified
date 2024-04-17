@@ -1,4 +1,3 @@
-
 def item_input():
     global Total
     productname = input("Please put the name of your product:")

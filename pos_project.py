@@ -1,8 +1,8 @@
-# We dont have a data base thats why we are taking an input form the user
+# We dont have a data base thats why we are taking an input from the user
 while True:
     print("Welcome to Dream World Shopping Center")
     name = input("Please provide the Your name:").title()
-    print("Welcome to Dreamworld", name)
+    print("Welcome to Dream world :", name)
     Total = 0
 
     while True:
@@ -13,7 +13,7 @@ while True:
         answer = input("Do you want to add some more products?  (Yes/No)")
         if answer == "yes" or answer == "Yes":
             additionalproductname = input("Please put the name of additional iteam :")
-            additionalproductquantity = float(input("How many you are taking:"))
+            additionalproductquantity = float(input("How many you are taking ?:"))
             additionalproductprice = float(
                 input("please put the price of your additional product:"))
             Total2 = Total + additionalproductprice * additionalproductquantity

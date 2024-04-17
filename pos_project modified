@@ -1,0 +1,29 @@
+
+def item_input():
+    global Total
+    productname = input("Please put the name of your product:")
+    quantity = float(input("How many are your taking today?: "))
+    price = float(input("Please put the price of each product: "))
+    Total += price * quantity
+
+while True:
+    print("Welcome to Dream World Shopping Center")
+    name = input("Please provide the Your name:").title()
+    print("Welcome to Dream world :", name)
+    Total = 0
+    break
+    
+while True:
+    item_input()
+    answer = input("Do you want to add some more products?  (Yes/No)")
+    if answer == "yes" or answer == "Yes":
+        item_input()
+        answer = input ("Do you want to add some more products?  (Yes/No)")
+               
+    elif answer == "no" or answer == "No":
+        print("-" * 40)
+        print(name)
+        print("Please pay $", Total)
+        print("-" * 40)
+        print("******Happy Shopping******")
+        break
